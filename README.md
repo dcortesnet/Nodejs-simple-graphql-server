@@ -1,6 +1,6 @@
 # Nodejs Graphql Apollo Server &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Basic server with Nodejs and the addition of Graphql
+Basic server with Nodejs and the addition of Graphql. This repository is part of a self-taught supplemental course to help students develop skills.
 
 ## Install
 
