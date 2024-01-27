@@ -1,9 +1,24 @@
 const { ApolloServer, gql } = require("apollo-server");
-const fs = require("fs");
 const { v4 } = require("uuid");
 
-const json = fs.readFileSync("./database/users.json", "utf8");
-const users = JSON.parse(json);
+const users = [
+  {
+    id: "8a169ade-2d06-4508-b5ba-57e730bef4af",
+    name: "John",
+    age: 20,
+    phone: "123-456-7890",
+    street: "123 Main St",
+    city: "Miami",
+  },
+  {
+    id: "ef3347db-d6f3-46ac-84aa-36f4c6076cc3",
+    name: "Jane",
+    age: 22,
+    phone: "334-159-2123",
+    street: "123 Hook St",
+    city: "New York",
+  },
+];
 
 const typeDefs = gql`
   type User {
